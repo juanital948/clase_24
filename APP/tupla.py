@@ -1,0 +1,1 @@
+t: tuple[int, int, int, int] = (1,2,3,4)  #la tupla no se puede modificar
