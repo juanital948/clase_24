@@ -25,3 +25,13 @@ def combinar_listas(lista1, lista2):
     return list(zip(lista1, lista2))
 
 print(combinar_listas(lista1, lista2))
+
+
+# hacer una funcion que reciba una lista de numeros enteros y la funcion debe retonar otra lista solo con los numeros de la lista original que sean pares
+l2=[]
+l1 = [1,2,3,4,5,6,7,8,9,10]
+def numeros_pares(lista):
+    for i in lista:
+        if i % 2 == 0: l2.append(i)
+        return l2
+    print(numeros_pares(l1))
