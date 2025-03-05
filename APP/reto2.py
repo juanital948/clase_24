@@ -35,3 +35,22 @@ def numeros_pares(lista):
         if i % 2 == 0: l2.append(i)
         return l2
     print(numeros_pares(l1))
+
+
+#crear una lista que reciba numeros enteros y debe retonar otra lista la lista que retorna debe contener los cuadrados de los numeros que son solo negativos de la lista original
+
+lista = [1,-2,3,-4,5,-6,7,-8,9,10]
+return_list = []
+def cuadrados_negativos(lista):
+    for i in lista:
+        if i < 0:
+            return_list.append(i**2)
+    return return_list
+print(cuadrados_negativos(lista))
+
+
+##
+
+lista: list[int] = [4, -4, 0, -5, 12, -8, 3]
+filter(lambda n: n < 0, lista)
+print(list(map(lambda n: n * n, filter(lambda n: n < 0, lista))))
